@@ -1,0 +1,41 @@
+﻿@model PortfolioSite.Domain.Models.RecordTable
+    <div class="wrap-profile">
+        <div class="container">
+            <div class="card">
+                <div class="profile">
+                    <img src="~/images/@Model.ImageName">
+                </div>
+
+                <div class="info">
+                    <h1 class="name">@Model.Name</h1>
+                    <br>
+                    <table>
+                        <caption>
+                            Таблица рекордов
+                            </capton>
+                            <tr>
+                                <th>№</th>
+                                <th>ник</th>
+                                <th>счет</th>
+                            </tr>
+                            @{
+                                int counter = 1;
+                            }
+                            @foreach (var item in Model.Records)
+                            {
+                                <tr>
+                                    <td>@counter</td>
+                                    <td>@item.Username</td>
+                                    <td>@item.Score</td>
+                                </tr>
+
+
+                                counter++;
+
+                            }
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

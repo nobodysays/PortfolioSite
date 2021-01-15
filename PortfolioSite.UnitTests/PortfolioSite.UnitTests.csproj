@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PortfolioSite.App\PortfolioSite.App.csproj" />
+    <ProjectReference Include="..\PortfolioSite.Common\PortfolioSite.Common.csproj" />
+    <ProjectReference Include="..\PortfolioSite.Domain\PortfolioSite.Domain.csproj" />
+    <ProjectReference Include="..\PortfolioSite.Infrastructure\PortfolioSite.Infrastructure.csproj" />
+    <ProjectReference Include="..\PortfolioSite.Persistance\PortfolioSite.Persistance.Postgres.csproj" />
+    <ProjectReference Include="..\PortfolioSite\PortfolioSite.csproj" />
+  </ItemGroup>
+
+</Project>

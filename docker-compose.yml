@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  portfoliosite:
+    image: ${DOCKER_REGISTRY-}portfoliosite
+    build:
+      context: .
+      dockerfile: PortfolioSite/Dockerfile
